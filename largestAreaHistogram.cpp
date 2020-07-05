@@ -17,6 +17,7 @@ int largestArea(int arr[],int n)
 				// we find the area with top element as minimum
 				topelement=arr[s.top()];
 				s.pop();
+				//here i is the right index and s.top is the left index
 				curArea=arr[topelement]*(s.empty()?i:i-s.top()-1);
 				
 				max_area=max(curArea,max_area);
